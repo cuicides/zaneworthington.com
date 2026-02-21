@@ -2,11 +2,10 @@
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Social from "../components/Social.astro";
+import "../styles/audio.css";
 import "../styles/global.css";
 import "../styles/lain.css";
-const platform = "github";
-const username = "cuicides";
-const pageTitle = "About Me";
+const pageTitle = "home";
 const identity = {
     firstName: "Zane",
     country: "US",
@@ -21,20 +20,21 @@ const skills = ["Premiere Pro", "Davinci Resolve", "Linux"];
 ---
 
 <html>
-    <head>
+    <header>
         <title>{pageTitle}</title>
         <Navigation />
-    </head>
-    <audio controls autoplay>
-        <source
-            src="Black Country New Road - 'Athens, France' (Official Lyric Video).mp3"
-            type="audio/ogg"
-        />
-    </audio>
+    </header>
+
     <body>
         <h1>{pageTitle}</h1>
 
         <p>Here are a few facts about me:</p>
+        <audio controls autoplay>
+            <source
+                src="Black Country New Road - 'Athens, France' (Official Lyric Video).mp3"
+                type="audio/ogg"
+            />
+        </audio>
         <footer>
             <h2>links</h2>
             <Social platform="github" username="m1m1cu1" />
@@ -43,7 +43,7 @@ const skills = ["Premiere Pro", "Davinci Resolve", "Linux"];
             <Social platform="instagram" username="m1m1cu1" />
             <Social platform="steamcommunity" username="/id/m1m1cu1" />
         </footer>
-    </body>
+    </body><style></style>
 
-    <style></style>
+
 </html>

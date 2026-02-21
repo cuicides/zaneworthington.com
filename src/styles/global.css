@@ -68,3 +68,20 @@ body:before {
         opacity: 0;
     }
 }
+header,
+footer {
+    text-align: center;
+    font-size: 100%;
+    margin: 10 px 0;
+    padding: 10 px 5 px;
+    background: #000000;
+    color: #ffffff; /* so text is visible on black */
+    width: fit-content;
+}
+html {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center; /* vertical centering */
+    text-align: center;
+}
