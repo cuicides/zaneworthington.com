@@ -6,15 +6,6 @@ import "../styles/audio.css";
 import "../styles/global.css";
 import "../styles/lain.css";
 const pageTitle = "home";
-const identity = {
-    firstName: "Zane",
-    country: "US",
-    occupation: "Student",
-    hobbies: ["guitar"],
-    github: "cuicides",
-    website: "https://zane-worthington.com",
-};
-const skills = ["Premiere Pro", "Davinci Resolve", "Linux"];
 
 // about me / home page
 ---
@@ -28,9 +19,12 @@ const skills = ["Premiere Pro", "Davinci Resolve", "Linux"];
     <body>
         <h1>{pageTitle}</h1>
 
-        <p>this is my page of all my stuff</p>
-        <audio>
-            <source src=".mp3" type="audio/ogg" />
+        <p>this is a page of all my stuff</p>
+        <audio controls autoplay>
+            <source
+                src="Black Country New Road - 'Athens, France' (Official Lyric Video).mp3"
+                type="audio/ogg"
+            />
         </audio>
         <footer>
             <h2>links</h2>
