@@ -10,6 +10,10 @@ body {
     background-color: black;
     background-attachment: fixed;
 }
+li {
+    list-style-type: none;
+    text-align: center;
+}
 * {
     box-sizing: border-box;
 }
@@ -17,6 +21,11 @@ h1 {
     color: red;
     margin: 1rem 0;
     font-size: 2.5rem;
+}
+h2 {
+    color: red;
+    margin: 1rem 0;
+    font-size: 1.5rem;
 }
 
 body:before {
