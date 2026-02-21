@@ -4,6 +4,7 @@ body {
     text-align: center;
     text-transform: lowercase;
     width: 50%;
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     max-height: auto;
     min-height: fit-content;
@@ -65,4 +66,16 @@ html {
     background-color: black;
     background-attachment: fixed;
     lang: en;
+}
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100% !important;
+        display: block !important;
+        padding: 10px !important;
+    }
+    .header,
+    .body,
+    .footer {
+        padding: 20px !important;
+    }
 }
